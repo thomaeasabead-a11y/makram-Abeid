@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكرم عبيد | المسيرة المهنية والأبحاث</title>
+    <!-- CSS & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #020617; color: #f8fafc; margin: 0; overflow-x: hidden; }
+        .hero-title { font-family: 'Playfair Display', serif; background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(191, 149, 63, 0.3)); }
+        .glass { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(191, 149, 63, 0.2); transition: all 0.5s ease; }
+        .glass:hover { border-color: #bf953f; transform: translateY(-5px); box-shadow: 0 10px 40px rgba(191, 149, 63, 0.15); }
+        .gold-border { position: relative; border-bottom: 2px solid transparent; border-image: linear-gradient(to right, transparent, #bf953f, transparent); border-image-slice: 1; }
+        #vanta-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: -1; }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating { 0% { transform: translatey(0px); } 50% { transform: translatey(-15px); } 100% { transform: translatey(0px); } }
+    </style>
+</head>
+<body>
+
+    <!-- الواجهة الرئيسية المتحركة -->
+    <section id="vanta-canvas" class="relative flex items-center justify-center">
+        <div class="text-center z-10 px-4">
+            <h1 class="hero-title text-7xl md:text-9xl font-black mb-6 floating">مكرم عبيد</h1>
+            <p class="text-xl md:text-3xl text-gray-300 font-light tracking-widest mb-10">خبير الأبحاث | رؤية مهنية تتجاوز الحدود</p>
+            <div class="flex justify-center gap-6">
+                <a href="#research" class="px-8 py-3 rounded-full border border-[#bf953f] text-[#bf953f] hover:bg-[#bf953f] hover:text-black transition-all font-bold">تصفح الأبحاث</a>
+                <a href="#lab" class="px-8 py-3 rounded-full bg-[#bf953f] text-black font-bold hover:scale-110 transition-all">مختبر الأفكار</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- المسيرة المهنية -->
+    <section class="py-24 bg-[#020617] relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center hero-title">المسيرة المهنية الخالدة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="glass p-10 rounded-3xl">
+                    <span class="text-[#bf953f] font-bold tracking-tighter">2020 - 2024</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">قيادة الابتكار العلمي</h3>
+                    <p class="text-gray-400 leading-relaxed">في هذه المرحلة، قمت بتطوير نماذج عمل تساهم في تطوير القطاع البحثي، مع التركيز على الاستراتيجيات الحديثة في الإدارة والتحليل.</p>
+                </div>
+                <div class="glass p-10 rounded-3xl">
+                    <span class="text-[#bf953f] font-bold tracking-tighter">2015 - 2019</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">التأسيس والبحث الأكاديمي</h3>
+                    <p class="text-gray-400 leading-relaxed">بداية الرحلة المهنية من خلال التعمق في الدراسات التحليلية والمساهمة في كتابة مراجع علمية متخصصة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأبحاث -->
+    <section id="research" class="py-24 bg-[#050a15]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center hero-title">مكتبة الأبحاث والدراسات</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- بحث 1 -->
+                <div class="glass p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-[#bf953f] opacity-10 rounded-full group-hover:scale-150 transition-all"></div>
+                    <h4 class="text-xl font-bold mb-4">تأثير التكنولوجيا في البحث</h4>
+                    <p class="text-gray-400 text-sm mb-6">دراسة شاملة حول تحول المنهجيات البحثية في ظل الذكاء الاصطناعي.</p>
+                    <a href="#" class="inline-block text-[#bf953f] font-bold border-b border-[#bf953f]">تحميل الدراسة PDF</a>
+                </div>
+                <!-- بحث 2 -->
+                <div class="glass p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-[#bf953f] opacity-10 rounded-full group-hover:scale-150 transition-all"></div>
+                    <h4 class="text-xl font-bold mb-4">الاستدامة في الإدارة</h4>
+                    <p class="text-gray-400 text-sm mb-6">بحث ميداني حول تطبيق معايير الاستدامة في المؤسسات الكبرى.</p>
+                    <a href="#" class="inline-block text-[#bf953f] font-bold border-b border-[#bf953f]">مشاهدة التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مختبر الأفكار التفاعلي -->
+    <section id="lab" class="py-24 bg-[#020617]">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="glass p-12 rounded-[40px] text-center border-2 border-[#bf953f]/30">
+                <h2 class="text-4xl font-bold mb-6 hero-title">مختبر الأفكار</h2>
+                <p class="text-gray-400 mb-10">ضع بصمتك العلمية هنا.. اقترح فكرة بحثية أو اطرح سؤالاً للمناقشة.</p>
+                <form class="space-y-6">
+                    <input type="text" placeholder="الاسم الشخصي" class="w-full bg-transparent border-b border-[#bf953f]/50 py-4 focus:outline-none focus:border-[#bf953f] transition-all text-center">
+                    <textarea placeholder="ما هي فكرتك العبقرية؟" class="w-full bg-transparent border-b border-[#bf953f]/50 py-4 focus:outline-none focus:border-[#bf953f] transition-all text-center"></textarea>
+                    <button class="px-12 py-4 bg-[#bf953f] text-black font-black rounded-full hover:scale-110 transition-all shadow-xl shadow-[#bf953f]/20">إرسال الفكرة للمختبر</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-600 border-t border-[#bf953f]/10">
+        <p>© 2024 جميع الحقوق محفوظة للمسيرة المهنية لـ <b>مكرم عبيد</b></p>
+    </footer>
+
+    <!-- Script للانيميشن المتحرك -->
+    <script>
+        VANTA.NET({
+          el: "#vanta-canvas",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xbf953f,
+          backgroundColor: 0x20617,
+          points: 12.00,
+          maxDistance: 24.00,
+          spacing: 16.00
+        })
+    </script>
+</body>
+</html>
